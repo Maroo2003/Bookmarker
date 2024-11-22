@@ -1,0 +1,82 @@
+
+/* ========== Start Global ========== */
+body{
+    background-color: hsl(34, 61%, 92%) !important;
+}
+:root{
+    --main-font-fa :  "Righteous", serif;
+}
+
+.main-font{
+    font-family: var(--main-font-fa);
+}
+
+header h1{
+    font-weight: 500;
+    color:rgb(53, 46, 40);
+    line-height: 60px;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    
+}
+header h1::after{
+    content: "";
+    width: 18.5%;
+    height: 20px;
+    z-index: -1;
+    background-color: rgb(254, 194, 96);
+    position: absolute;
+    left: 41%;
+    bottom: 0;
+    transition: height 0.5s;
+}
+
+header h1:hover::after {
+    height: 40px;
+    
+}
+
+hr{
+
+    border: none;
+    border-top: 6px dotted black;
+    
+}
+
+.second-header-container{
+    
+    background: linear-gradient(to right , #3ea55b, #b2ac4a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.second-header-container h2{
+    font-family: "Righteous", serif;
+}
+.inputs .form-control:focus {
+    
+    box-shadow: 0 0 0 0.35rem #fec26055;
+}
+
+.btn-container .btn{
+    --bs-btn-padding-x: 3.55rem;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-hover-bg: #bb4120;
+}
+
+.inputs label{
+    font-family: var(--main-font-fa);
+}
+tr .btn-primary{
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+tr .btn-danger{
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+   
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+
